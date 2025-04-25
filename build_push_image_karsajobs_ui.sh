@@ -9,7 +9,7 @@ docker images
 docker tag karsajobs-ui:latest ghcr.io/umarazis/karsajobs-ui:latest
 
 # Login ke Github Packages via Terminal
-echo $PASSWORD_GITHUB | docker login ghcr.io --username umarazis --password-stdin
+echo $PAT | docker login ghcr.io --username umarazis --password-stdin
 
-# Mengunggah image ke Docker Hub
+# Mengunggah image ke Github Packages
 docker push ghcr.io/umarazis/karsajobs-ui:latest
